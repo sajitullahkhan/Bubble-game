@@ -13,7 +13,7 @@ function bubblemacking(){
 bubblemacking();
 
 function runtimer(){
-    let timer = 6;
+    let timer = 60;
     let settimer = setInterval(function(){
         if(timer>0){
             timer--;
