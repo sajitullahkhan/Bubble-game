@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(185, 219, 219);
     height: 100%;
     width: 100%;
 }
@@ -37,10 +37,14 @@ body {
     color: aliceblue;
 }
 
-.e-box{
-    width: 15%;
+.e-box {
+    width: 25%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .box{
     font-size: 25px;
@@ -48,6 +52,7 @@ body {
     border-radius: 10px;
     background-color: aliceblue;
     color: rgb(0, 7, 112);
+    width: 90px;
 }
 
 .p-body{
@@ -80,6 +85,16 @@ body {
     color: rgb(255, 255, 255);
 }
 #gv{
-    font-size: 80px;
+    font-size: 10vw;
     color: white;
+}
+
+@media screen and (max-width: 600px){
+    .p-body{
+        overflow-x: scroll;
+    }
+
+    .p-head {
+        height: 70px;
+    }
 }
