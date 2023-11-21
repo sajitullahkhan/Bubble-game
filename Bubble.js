@@ -10,7 +10,17 @@ function bubblemacking(){
     }
     document.querySelector(".p-body").innerHTML = stor;
 }
-bubblemacking();
+
+function hit(){
+    hit_rn = Math.floor(Math.random()*10)
+    document.querySelector(`#hit_n`).textContent = hit_rn;
+}
+
+let score = 0;
+function score_c(){
+    score += 10;
+    document.querySelector(`#id_score`).textContent = score;
+};
 
 function runtimer(){
     let timer = 60;
@@ -21,22 +31,11 @@ function runtimer(){
         }
         else{
             clearInterval(settimer);
-            document.querySelector('.p-body').innerHTML = "<h1 id='gv'>Game Over</h1>"
+            gameOverSection.style.display = "flex"
+            document.querySelector('.p-body').innerHTML = ``;
+            document.querySelector('.your-score').innerHTML = `Your score = ${score}`
         }
     }, 1000);
-}
-runtimer();
-
-function hit(){
-    hit_rn = Math.floor(Math.random()*10)
-    document.querySelector(`#hit_n`).textContent = hit_rn;
-}
-hit();
-
-let score = 0;
-function score_c(){
-    score += 10;
-    document.querySelector(`#id_score`).textContent = score;
 }
 
 document.querySelector(".p-body").addEventListener("click", 
@@ -47,4 +46,26 @@ function(dets){
         bubblemacking();
         hit();
     }
+});
+
+let playSection = document.querySelector(".play-section");
+let playBtn = document.querySelector(".play-btn");
+
+playBtn.addEventListener('click', () => {
+    hit();
+    runtimer();
+    bubblemacking();
+    playSection.style.display = "none"
+});
+
+let gameOverSection = document.querySelector('.game-over-section');
+let playAgainBtn = document.querySelector(".play-again-btn");
+
+playAgainBtn.addEventListener('click', () => {
+    hit();
+    runtimer();
+    bubblemacking();
+    score = 0;
+    document.querySelector(`#id_score`).textContent = score;
+    gameOverSection.style.display = "none"
 });

@@ -84,17 +84,92 @@ body {
     background-color: rgb(52, 194, 111);
     color: rgb(255, 255, 255);
 }
-#gv{
-    font-size: 10vw;
-    color: white;
+
+.play-section{
+    background-color: aliceblue;
+    height: 30vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 20px;
 }
 
-@media screen and (max-width: 600px){
+.play-btn{
+    margin-top: 25px;
+    height: 50px;
+    width: 130px;
+    background-color: rgb(83, 83, 182);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.game-over-section{
+    background-color: aliceblue;
+    height: 30vh;
+    width: 40vw;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.your-score{
+    margin-top: 10px;
+}
+
+.play-again-btn{
+    margin-top: 25px;
+    height: 50px;
+    width: 230px;
+    background-color: rgb(83, 83, 182);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.h1{
+    font-size: 40px;
+}
+
+@media screen and (max-width: 660px){
     .p-body{
         overflow-x: scroll;
     }
 
     .p-head {
         height: 70px;
+    }
+
+    .play-section{
+        height: 20vh;
+        width: 45vw;
+        text-align: center;
+    }
+    
+    .play-btn{
+        width: 120px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .game-over-section{
+        height: 20vh;
+        width: 50vw;
+        text-align: center;
+    }
+    
+    .play-again-btn{
+        height: 45px;
+        width: 170px;
+        font-size: 20px;
+        font-weight: 600;
     }
 }
