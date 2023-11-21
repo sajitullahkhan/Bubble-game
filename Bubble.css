@@ -27,7 +27,8 @@ body {
     border-radius: 10px;
     overflow: hidden;
 }
-.p-head{
+
+.p-head {
     height: 10%;
     width: 100%;
     background-color: rgb(79, 23, 233);
@@ -46,7 +47,7 @@ body {
 }
 
 
-.box{
+.box {
     font-size: 25px;
     margin: 3px;
     border-radius: 10px;
@@ -55,7 +56,7 @@ body {
     width: 90px;
 }
 
-.p-body{
+.p-body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +67,7 @@ body {
     background-color: rgb(126, 135, 214);
 }
 
-.bubble{
+.bubble {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,13 +80,13 @@ body {
     margin: 10px;
 }
 
-.bubble:hover{
+.bubble:hover {
     cursor: pointer;
     background-color: rgb(52, 194, 111);
     color: rgb(255, 255, 255);
 }
 
-.play-section{
+.play-section {
     background-color: aliceblue;
     height: 30vh;
     width: 40vw;
@@ -97,7 +98,7 @@ body {
     border-radius: 20px;
 }
 
-.play-btn{
+.play-btn {
     margin-top: 25px;
     height: 50px;
     width: 130px;
@@ -107,8 +108,10 @@ body {
     color: white;
     font-size: 30px;
     font-weight: 700;
+    cursor: pointer;
 }
-.game-over-section{
+
+.game-over-section {
     background-color: aliceblue;
     height: 30vh;
     width: 40vw;
@@ -120,11 +123,11 @@ body {
     border-radius: 20px;
 }
 
-.your-score{
+.your-score {
     margin-top: 10px;
 }
 
-.play-again-btn{
+.play-again-btn {
     margin-top: 25px;
     height: 50px;
     width: 230px;
@@ -134,14 +137,15 @@ body {
     color: white;
     font-size: 30px;
     font-weight: 700;
+    cursor: pointer;
 }
 
-.h1{
+.h1 {
     font-size: 40px;
 }
 
-@media screen and (max-width: 660px){
-    .p-body{
+@media screen and (max-width: 660px) {
+    .p-body {
         overflow-x: scroll;
     }
 
@@ -149,27 +153,34 @@ body {
         height: 70px;
     }
 
-    .play-section{
-        height: 20vh;
-        width: 45vw;
+    .play-section {
+        height: 25vh;
+        width: 70vw;
         text-align: center;
     }
-    
-    .play-btn{
+
+    .play-btn {
         width: 120px;
         font-size: 25px;
         font-weight: 600;
     }
-    .game-over-section{
-        height: 20vh;
-        width: 50vw;
+
+    .game-over-section {
+        height: 25vh;
+    width: 70vw;
         text-align: center;
     }
-    
-    .play-again-btn{
+
+    .play-again-btn {
         height: 45px;
         width: 170px;
         font-size: 20px;
         font-weight: 600;
+    }
+
+    #panel {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
     }
 }
